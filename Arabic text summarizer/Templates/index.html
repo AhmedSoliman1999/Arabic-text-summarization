@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+          crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+          crossorigin="anonymous">
+         <title>Arabic Summarization</title>
+      </head>
+
+      <body data-spy="scroll" data-target="#main-nav" id="home">
+        <nav class="navbar navbar-expand-sm bg-danger navbar-dark fixed-top" id="main-nav">
+        <div class="container">
+        <button class=" ml-auto navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">الصفحه الرئيسيه</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#summerizer" class="nav-link">الملخّص</a>
+                </li>
+
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+      <!-- HOME SECTION -->
+      <header id="home-section" class="py-10" style="background-image:url(imgg.jpeg);
+background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;">
+          <div class="dark-overlay" style="position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 700px;
+    background: rgba(0, 0, 0, 0.7);">
+            <div class="container home-inner" style="padding-top: 250px; color: rgb(169, 173, 177);">
+                <div class="row">
+                  <div class="col text-center py-5">
+                    <h1 style="text-align: center;color: red;">الملخّص العربي
+                    </h1> <br>
+                    <a href="#summerizer" class="btn btn-outline-danger">أبدأ الأن </a>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+
+          </div>
+      </header>
+
+      <!-- summerizer section-->
+      <section id="summerizer" class=" py-5">
+        <div class="container" >
+            <div class="row ">
+              <div class="col-md-6">
+                <h4 class="display-5 " style="color: red;"  align="right">الملخّص</h4>
+                <textarea style="border-radius: 10px;" cols="70" rows="20" id="output_txt"></textarea>
+              </div>
+               <div class="col-md-6">
+                <h4 class="display-5 " style="color: red;" align="right">النص الأصلي</h4>
+                <textarea style="border-radius: 10px; direction: rtl;" cols="70" rows="20" placeholder="أبدأ من هنا" id="input_txt"></textarea>
+                <p align="right">
+                   <button style="margin-top:20px" class="btn btn-danger" id="summerize_btn" onclick="server.take()" >لخّص</button>
+                </p>
+              </div>
+           </div>
+        </div>
+      </section>
+
+        <section style="margin-bottom:90px">
+        <div class="container ">
+         <div class="row" >
+          <div class="col-md-6">
+            <div class="form-group">
+                <input id="s_title" type="text" class="form-control" style="border-color: red;" >
+            </div>
+          </div>
+          <div class="col-md-6">
+              <p align="right">
+                   <button class="btn btn-danger" onclick="server.create_title()">اضافه عنوان</button>
+              </p>
+          </div>
+         </div>
+        </div>
+      </section>
+
+
+<script src="app.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+
+   <script>
+        // Init Scrollspy
+        $('body').scrollspy({ target: '#main-nav' });
+
+        // Smooth Scrolling
+        $("#main-nav a").on('click', function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+
+            const hash = this.hash;
+
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function () {
+
+              window.location.hash = hash;
+            });
+          }
+        });
+      </script>
+</body>
+</html>
