@@ -78,8 +78,140 @@ This method represents the structure of the text using RST, RST is used to know 
  6. Evaluate Performance: Calculate accuracy
 
 
+## System Analysis & Design
+
+### Use Case Diagram
+
+![image](https://user-images.githubusercontent.com/48762703/206580761-d7bba64c-59d3-4067-b55c-94a0106d69ed.png)
+
+### Class Diagram
+![image](https://user-images.githubusercontent.com/48762703/206580864-40d6a07e-3c39-46f7-82b9-042c6ea2a19b.png)
+
+### Sequence Diagram 
+![image](https://user-images.githubusercontent.com/48762703/206580975-3e376df7-58af-4690-a784-62b30be84b5d.png)
 
 
+
+# Dataset:
+The dataset used for evaluation is The Essex Arabic Summaries Corpus (EASC) It consists of 153 documents.Each document has five corresponding summaries written by human experts.EASC includes 10 subjects: art, music, environment, politics, sports, health, finance, science, and technology, tourism, religion, and education.
+
+
+
+# Implementation and Testing
+
+1. Preprocessing 
+
+This module is concerned with preparing the text. we start by reading the text,then apply Normalization, in this step punctuations, digits and diacritics are eliminated from the sentence, also the letters are restored to their original form in Arabic language.Then,Tokenization which means split text to word and save in list.Then,Take a list of words, remove all stop words in text and finally apply ISRIS Stemmer to extract the root of word to reduce the number of distinct words in the text and find similar words.
+
+![image](https://user-images.githubusercontent.com/48762703/206581248-cd527a82-daaf-46b1-afcd-6055ea4f4274.png)
+
+
+2. Morphological analysis:
+Every word in the sentence takes a tag representing its Part of Speech (POS) position in the sentence like (verb, noun, preposition, etc….) and this help us identify the important words.then we determine count of nouns words in each sentence in text as it will be used as initial rank for modified page rank algorithm.
+
+![image](https://user-images.githubusercontent.com/48762703/206581349-412a806f-a997-4840-a13a-17067c3f874c.png)
+
+
+3. Building graph:
+In this step the text is represented as a graph and the vertices of this graph is sentences and edge between sentences is weighted edge which represents cosine similarity between sentences.
+The input of this function is the text after stemming.
+We should calculate TF-IDF for the Sentences.
+
+![image](https://user-images.githubusercontent.com/48762703/206581570-f71df911-90f1-4d68-9dca-66fa83774c85.png)
+
+
+Then calculate cosine similarity between each two sentence and this will be the weighted edge between these two sentences.
+
+![image](https://user-images.githubusercontent.com/48762703/206581704-f2f58d7a-da6a-4eeb-8912-2174229a04bf.png)
+
+![image](https://user-images.githubusercontent.com/48762703/206581741-7caf6deb-cfc3-4dc4-a7c3-110c67b811ac.png)
+
+4. Modified page rank algorithm:
+First, give every sentence initial rank equal its own the number of nouns.
+Then Apply PageRank algorithm with number of iterations 1000 to update rank of every sentences.
+Mpr: New rank for sentence in each iteration.
+𝐸(𝑔,𝑣𝑖): edge between sentence and each sentence.
+𝑃𝑅(𝑣𝑖):Previous rank of sentence.
+N: number of sentences in document.
+d: constant number=0.85
+
+![image](https://user-images.githubusercontent.com/48762703/206581855-ad4c89b3-78a2-425f-83c2-d1d72d7d03ea.png)
+ 5. Summary Extraction:
+Sort sentences descending because the sentence that has biggest ranking it is most important and so we are arranged sentences in order of importance.
+Then, remove sentences with ranking less than 0.4 and Check cosine similarity between sentences and remove sentence of cosine similarity more than 0.7.
+
+![image](https://user-images.githubusercontent.com/48762703/206581956-7a83c756-6757-42e2-89de-a970eb9b98ae.png)
+
+
+6. Testing:
+The evaluation Matrices that are used to evaluate summary are precision, recall and F-measure. These matrices evaluate summary of the system for the dataset document against five corresponding summaries written by human experts in the dataset.
+
+![image](https://user-images.githubusercontent.com/48762703/206582816-c7e2d55c-e147-4137-90c5-f16deedf0479.png)
+
+
+7. Evaluation results:
+Rouge is essentially a set of metrics for evaluating automatic summarization text.
+It works by comparing an automatically produced summary against set of reference summaries(typically human-produced).
+Rouge-N: measures unigram,bigram,trigram and higher order n-gram overlap.
+Rouge-L: measures longest matching sequence of words.
+F-Measure:
+
+![image](https://user-images.githubusercontent.com/48762703/206583257-1fa36cd1-8346-4eac-acac-3abc4f1a9dd1.png)
+
+
+8. Extract Title
+Calculate the phrase score for each key phrase according to the equation:
+
+![image](https://user-images.githubusercontent.com/48762703/206583625-a3a47c03-3295-4b70-8a5d-cdcf98c0c5c4.png)
+
+
+9.UI Design:
+• UI design is implemented using local website.
+• Tools used for website:
+  * For font end:
+      - Html:describe the structre of the web page.Its elements tell the browser how to display the content.
+      - CSS: describes how html elements displayed on screen.it controls the layout of the webpage. o JavaScript: is a scripting language that enables us to create             dynamically updating content, control multimedia, animate images, and pretty much everything else.
+      - Bootstrap:is the most popular CSS framework.
+   * To connect frontend and backend:
+      - Flask 
+
+
+# User Manual
+
+To run local website:
+   Installation Guide:
+        Install anaconda and python
+        From anaconda prompt run these commands:
+              pip install jyserver
+              pip install qalsadi
+              pip install self
+              pip install flask
+
+1. Open project file.
+![image](https://user-images.githubusercontent.com/48762703/206585908-860bb011-9ff1-4523-9961-f21e223a5b39.png)
+
+
+2. Replace path of project with cmd and press enter.
+![image](https://user-images.githubusercontent.com/48762703/206585996-0ed40307-029e-46cc-b6ed-2bfd79f0785e.png)
+
+
+3. Write in cmd python main.py and press enter.
+![image](https://user-images.githubusercontent.com/48762703/206586145-0dc833a4-0e70-4967-96fb-218f933afe4e.png)
+
+
+4. Copy address that will appear.
+![image](https://user-images.githubusercontent.com/48762703/206586825-f1fd93af-99b6-40f3-aeb5-d57f38ca7282.png)
+
+5. Paste address on browser and insert text you want title for in the input text textbox and click create title button to extract title or summarize to extract summary.
+![image](https://user-images.githubusercontent.com/48762703/206586985-7f242fb6-b1bc-4eeb-a069-b188e9615d94.png)
+
+
+# Conclusion
+
+The Arabic language is spoken by more 300 million people all over the world, and despite that, it suffers from poor researches in it, because it suffers from many problems and challenges.Therefore, The Arabic language is considered one of the strongest and most difficult languages.
+Arabic text summarization is of great importance, especially in last period with the massive increase of online documents it become hard to read all of that. Our system saves time for users and make it easier for them, as it displays the important sentences and points in document. One of the most important points of this project is that it supports the Arabic language.
+This research tries to enhance the performance of the generated summaries by applying the Modified PageRank algorithm. Morphological analyzer is used to overcome the problems of Arabic structure complexity and to extract nouns to use in the process of building the graph, and cosine similarity was used to weigh the edges between sentences. A Modified PageRank algorithm was used to extract the summary, this algorithm was used by making the initial rank of the sentence as the number of nouns it has, and the weight of the edge is the cosine similarity between the connected nodes.
+The process of summarization starts by reading the documents, then normalizing data, removing stop words, stemming, morphological analyzer then finally applying the graph and getting the summary. EASC is used as a standard corpus in the testing stage. According to the results, the Modified PageRank returns better results when the number of iterations used is equal to 1000. Page Rank algorithm returns better results than the methods created before it so we use it and our final F-measure is 60.
 
 
 
