@@ -5,6 +5,22 @@ Graduation team project to summarize any arabic text using nlp techniques and mo
 
 ![image](https://user-images.githubusercontent.com/48762703/206573196-06f70431-9578-4960-bc92-195d1e999033.png)
 
+
+
+# Contributors 
+
+Credits go to the great team :
+
+
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/AhmedSoliman1999"><img src="![image](https://user-images.githubusercontent.com/48762703/206589138-52c0a40e-301c-441d-b2c6-889698a82cbf.png)" width="100px;" alt="Ahmed Soliman Image"/><br/><sub><b>Ahmed Soliman</b></sub></a><br/> </td>
+
+  </tr>
+</table>
+
+
+
 # Arabic text summarization 
    Text summarization is the process of producing a shorter version of a specific text. Automatic summarization techniques have been applied to various domains such as medical, political, news, and legal domains proving that adapting domain-relevant features could improve the summarization performance. Despite the existence of plenty of research work in the domain-based summarization in English and other languages, there is a lack of such work in Arabic due to the shortage of existing knowledge bases.
  The project approach is to summarize Arabic text. Arabic text summarization is one of the natural language processing applications which aims to reduce the original text and return the important information from the original text. Which aims to reduce the time that the reader takes to read the article and provide him with the same important information in the original text.
