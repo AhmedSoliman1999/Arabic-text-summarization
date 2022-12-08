@@ -9,12 +9,15 @@ Graduation team project to summarize any arabic text using nlp techniques and mo
 
 # Contributors 
 
-Credits go to the great team :
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
 
 
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/AhmedSoliman1999"><img src="![image](https://user-images.githubusercontent.com/48762703/206589138-52c0a40e-301c-441d-b2c6-889698a82cbf.png)" width="100px;" alt="Ahmed Soliman Image"/><br/><sub><b>Ahmed Soliman</b></sub></a><br/></td>
+    <td align="center"><a href="https://github.com/AhmedSoliman1999"><img src="![image](https://user-images.githubusercontent.com/48762703/206590489-89dcedb4-d9cc-4e3b-8f41-e86845c45b91.png)
+" width="100px;" alt="Ahmed Soliman Image"/><br/><sub><b>Ahmed Soliman</b></sub></a><br/></td>
 
   </tr>
 </table>
