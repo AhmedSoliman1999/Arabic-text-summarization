@@ -75,7 +75,7 @@ This method represents the structure of the text using RST, RST is used to know 
 #### 3. Build graph: represent the relation between sentences where the vertices represent the sentences Every two vertices are connected with an edge, which has a weight equal to cosine similarity
 #### 4. Apply Modified PageRank: in this step, each sentence is given a special rank that expresses the import of the sentence
 #### 5. Summary Extraction: nodes are sorted depending on their final rank, and add sentences to the summary with check the overlapping between the sentences if then the overlapping is very high then, this sentence is neglected to prevent redundancy.
-####  6. Evaluate Performance: Calculate accuracy
+  6. Evaluate Performance: Calculate accuracy
 
 
 
