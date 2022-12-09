@@ -23,7 +23,6 @@ Graduation team project to summarize any arabic text using nlp techniques and mo
 
 <table>
   <tr>    
-    
     <td align="center"><a href="https://github.com/omniayman"><img src="https://user-images.githubusercontent.com/48762703/206595057-6fee39b0-d490-49eb-b69b-0a6528003e04.png" width="100px;"alt="Omnia Ayman Image"/><br/><sub><b>Omnia Ayman</b></sub></a> </td>
     
   </tr>
