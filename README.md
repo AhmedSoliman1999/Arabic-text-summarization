@@ -9,6 +9,7 @@ Graduation team project to summarize any arabic text using nlp techniques and mo
 
 # Contributors 
 
+Special thanks to these great people that worked on the graduation project :
 
 
 <table>
@@ -255,6 +256,32 @@ The Arabic language is spoken by more 300 million people all over the world, and
 Arabic text summarization is of great importance, especially in last period with the massive increase of online documents it become hard to read all of that. Our system saves time for users and make it easier for them, as it displays the important sentences and points in document. One of the most important points of this project is that it supports the Arabic language.
 This research tries to enhance the performance of the generated summaries by applying the Modified PageRank algorithm. Morphological analyzer is used to overcome the problems of Arabic structure complexity and to extract nouns to use in the process of building the graph, and cosine similarity was used to weigh the edges between sentences. A Modified PageRank algorithm was used to extract the summary, this algorithm was used by making the initial rank of the sentence as the number of nouns it has, and the weight of the edge is the cosine similarity between the connected nodes.
 The process of summarization starts by reading the documents, then normalizing data, removing stop words, stemming, morphological analyzer then finally applying the graph and getting the summary. EASC is used as a standard corpus in the testing stage. According to the results, the Modified PageRank returns better results when the number of iterations used is equal to 1000. Page Rank algorithm returns better results than the methods created before it so we use it and our final F-measure is 60.
+
+
+
+# References
+
+[1] <a name="ref-1" href="https://www.researchgate.net/publication/348163080_Arabic_text_summarization_approaches_A_comparison_study">Hani Alghanem , Rashan H Ajamiah.(December 2020). Arabic text summarization approaches: A comparison study </a>
+  
+[2] <a name="ref-2" href="https://www.sciencedirect.com/science/article/pii/S1877050917321452">Lamees MahmoudAl Qassem , DiWang , ZaidAl Mahmoud, HassanBarada,  AhmadAl-Rubaie, Nawaf I.Almoosa. (5 November 2017.). Automatic Arabic summarization: A survey of methodologies and systems </a>
+
+[3] <a name="ref-3" href="https://www.sciencedirect.com/science/article/pii/S1110866519301355">Reda Elbarougya, Gamal Beherya, Akram El Khatibb.( July 2020). Extractive Arabic Text Summarization Using Modified PageRank Algorithm. </a>
+  
+[4] <a name="ref-4" href="https://link.springer.com/article/10.1007/s12559-018-9547-z">Qasem A. Al-Radaideh , Dareen Q. Bataineh, (March 2018). A Hybrid Approach for Arabic Text Summarization Using Domain Knowledge and Genetic Algorithms. </a>
+  
+[5] <a name="ref-5" href="https://link.springer.com/article/10.1186/s40537-020-00386-7">Said Desouki , Molham Al-Maleh,( December 2020). Arabic text summarization using deep learning approach. </a>
+
+[6] <a name="ref-6" href="https://www.researchgate.net/publication/296706459_Automatic_Keyphrase_Extractor_from_Arabic_Documents">Najadat Hassan,Ismail I.Hmeidi,Mohammed N.AL-Kabi,Maysa Mahmoud Bany Issa,(Febraury 2016).Automatic KeyPhrase Extractor from Arabic Documents. </a>
+
+[7] <a name="ref-7" href="https://www.sciencedirect.com/science/article/abs/pii/S030645731730417X">Aqil Azmi, Nouf I. Altmami,( November 2018). An abstractive Arabic text summarizer with user-controlled granularity. </a>
+
+
+
+
+
+ 
+
+
 
 
 
