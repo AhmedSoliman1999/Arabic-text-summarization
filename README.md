@@ -20,12 +20,12 @@ Graduation team project to summarize any arabic text using nlp techniques and mo
     
     <td align="center"><a href="https://github.com/ayaashraf14"><img src="https://user-images.githubusercontent.com/48762703/206593732-df28e48b-9c4d-44c4-9312-4c7f8cb78060.png" width="100px;"alt="Aya Ashraf Image"/><br/><sub><b>Aya Ashraf</b></sub></a></td>
     
-    <td align="center"><a href="https://github.com/lojainahmed">                                                                                                           <img src="![image](https://user-images.githubusercontent.com/48762703/206594086-de5993ae-eabd-4095-a887-4a4a9f066fa3.png)" width="100px;"                                alt="Lojain Ahmed Image"/><br/><sub><b>Lojain Ahmed</b></sub></a></td>
+    <td align="center"><a href="https://github.com/lojainahmed"><img src="![image](https://user-images.githubusercontent.com/48762703/206594086-de5993ae-eabd-4095-a887-4a4a9f066fa3.png)" width="100px;"alt="Lojain Ahmed Image"/><br/><sub><b>Lojain Ahmed</b></sub></a></td>
     
-    <td align="center"><a href="https://github.com/engy14">                                                                                                                <img src="https://user-images.githubusercontent.com/48762703/206594742-27be9680-c01d-4f12-bb5f-bfc069e0bc2d.png" width="100px;"                                        alt="Enjy Assem Image"/><br/><sub><b>Enjy Assem</b></sub></a></td>
+    <td align="center"><a href="https://github.com/engy14"><img src="https://user-images.githubusercontent.com/48762703/206594742-27be9680-c01d-4f12-bb5f-bfc069e0bc2d.png" width="100px;"alt="Enjy Assem Image"/><br/><sub><b>Enjy Assem</b></sub></a></td>
     
     
-    <td align="center"><a href="https://github.com/omniayman">                                                                                                             <img src="https://user-images.githubusercontent.com/48762703/206595057-6fee39b0-d490-49eb-b69b-0a6528003e04.png" width="100px;"                                         alt="Omnia Ayman Image"/><br/><sub><b>Omnia Ayman</b></sub></a></td>
+    <td align="center"><a href="https://github.com/omniayman"><img src="https://user-images.githubusercontent.com/48762703/206595057-6fee39b0-d490-49eb-b69b-0a6528003e04.png" width="100px;"alt="Omnia Ayman Image"/><br/><sub><b>Omnia Ayman</b></sub></a></td>
     
 
   </tr>
