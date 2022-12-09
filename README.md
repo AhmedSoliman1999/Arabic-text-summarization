@@ -28,7 +28,7 @@ Graduation team project to summarize any arabic text using nlp techniques and mo
     
 <table>
   <tr>  
-    <td align="center"><a href="https://github.com/lojainahmed"><img src="![image](https://user-images.githubusercontent.com/48762703/206594086-de5993ae-eabd-4095-a887-4a4a9f066fa3.png)" width="100px;"alt="Lojain Ahmed Image"/><br/><sub><b>Lojain Ahmed</b></sub></a> </td>
+    <td align="center"><a href="https://github.com/lojainahmed"><img src="https://user-images.githubusercontent.com/48762703/206594086-de5993ae-eabd-4095-a887-4a4a9f066fa3.png" width="100px;"alt="Lojain Ahmed Image"/><br/><sub><b>Lojain Ahmed</b></sub></a> </td>
    </tr>
 </table>  
     
