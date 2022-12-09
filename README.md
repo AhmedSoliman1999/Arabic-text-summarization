@@ -9,9 +9,7 @@ Graduation team project to summarize any arabic text using nlp techniques and mo
 
 # Contributors 
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
+
 
 
 <table>
