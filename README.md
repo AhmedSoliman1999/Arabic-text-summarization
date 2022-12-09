@@ -16,7 +16,7 @@ Graduation team project to summarize any arabic text using nlp techniques and mo
 
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/AhmedSoliman1999">                                                                                                <img src="![image](https://user-images.githubusercontent.com/48762703/206590489-89dcedb4-d9cc- 4e3b-8f41-e86845c45b91.png)" width="100px;" alt="Ahmed Soliman Image"/><br/><sub><b>Ahmed Soliman</b></sub></a><br/></td>
+    <td align="center"><a href="https://github.com/AhmedSoliman1999">                                                                                                       <img src="![image](https://user-images.githubusercontent.com/48762703/206592205-b8681afd-b744-4c67-8c98-c8af3dde49b3.png)" width="50px;"                               alt="Ahmed Soliman    Image"/><br/><sub><b>Ahmed Soliman</b></sub></a><br/></td>
 
   </tr>
 </table>
