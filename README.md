@@ -22,11 +22,10 @@ Special thanks to these great people that worked on the graduation project :
 
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/ayaashraf14"><img src="https://user-images.githubusercontent.com/48762703/206593732-df28e48b-9c4d-44c4-9312-4c7f8cb78060.png" width="100px;"alt="Aya Ashraf Image"/><br/><sub><b>Aya Ashraf</b></sub></a> </td>
+    <td align="center"><a href="https://github.com/ayaashraf14"><img src="https://user-images.githubusercontent.com/48762703/209476215-973a7f69-1c9b-4649-8dc8-a386a651b9b5.png" width="100px;"alt="Aya Ashraf Image"/><br/><sub><b>Aya Ashraf</b></sub></a> </td>
    </tr>
 </table>  
-    
-    
+   
 <table>
   <tr>  
     <td align="center"><a href="https://github.com/lojainahmed"><img src="https://user-images.githubusercontent.com/48762703/206594086-de5993ae-eabd-4095-a887-4a4a9f066fa3.png" width="100px;"alt="Lojain Ahmed Image"/><br/><sub><b>Lojain Ahmed</b></sub></a> </td>
